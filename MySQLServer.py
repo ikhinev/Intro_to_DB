@@ -5,11 +5,11 @@ try:
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Ikhine123@"   
+        password=“”
     )
     cursor = connection.cursor()
-    cursor.execute("CREATE DATABASE IF NOT EXISTS alxbookstore")
-    print("Database 'alxbookstore' created successfully!")
+    cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+    print("Database 'alx_book_store' created successfully!")
 except Error as e:
     print(f"Error: {e}")
 finally:
